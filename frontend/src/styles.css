@@ -1,0 +1,1063 @@
+@import url(
+  'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap'
+);
+
+
+:root {
+
+  font-family:
+    "DM Sans",
+    system-ui,
+    sans-serif;
+
+  color: #e8edf5;
+
+  background:
+    #070a0f;
+
+  font-synthesis: none;
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+  margin: 0;
+
+  min-width: 320px;
+
+  background:
+    radial-gradient(
+      circle at 20% 0%,
+      #182132 0,
+      transparent 35%
+    ),
+    #070a0f;
+
+}
+
+
+button,
+input,
+textarea {
+
+  font: inherit;
+
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+.app {
+
+  min-height: 100vh;
+
+}
+
+
+.topbar {
+
+  height: 78px;
+
+  border-bottom:
+    1px solid #202734;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding:
+    0 40px;
+
+  background:
+    rgba(7, 10, 15, .85);
+
+  backdrop-filter:
+    blur(18px);
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 20;
+
+}
+
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+}
+
+
+.brandMark {
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 12px;
+
+  display: grid;
+
+  place-items: center;
+
+  font-weight: 800;
+
+  background: #e8edf5;
+
+  color: #070a0f;
+
+}
+
+
+.brand h1 {
+
+  font-family:
+    "Space Grotesk";
+
+  font-size: 18px;
+
+  letter-spacing: .08em;
+
+  margin: 0;
+
+}
+
+
+.brand p {
+
+  color: #788397;
+
+  font-size: 11px;
+
+  margin: 3px 0 0;
+
+}
+
+
+.systemStatus {
+
+  font-size: 11px;
+
+  color: #a8b4c7;
+
+  letter-spacing: .08em;
+
+}
+
+
+.pulse {
+
+  display: inline-block;
+
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #66e3a1;
+
+  margin-right: 8px;
+
+  box-shadow:
+    0 0 14px #66e3a1;
+
+}
+
+
+.layout {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    390px;
+
+  gap: 24px;
+
+  max-width: 1500px;
+
+  margin: auto;
+
+  padding: 32px 40px;
+
+}
+
+
+.hero {
+
+  min-height: 280px;
+
+  border:
+    1px solid #202734;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(23, 30, 43, .9),
+      rgba(8, 11, 16, .9)
+    );
+
+  overflow: hidden;
+
+}
+
+
+.eyebrow {
+
+  color: #718097;
+
+  font-size: 10px;
+
+  letter-spacing: .16em;
+
+  font-weight: 700;
+
+}
+
+
+.hero h2 {
+
+  font-family:
+    "Space Grotesk";
+
+  font-size:
+    clamp(32px, 4vw, 58px);
+
+  line-height: .98;
+
+  max-width: 720px;
+
+  margin:
+    18px 0;
+
+  letter-spacing:
+    -.045em;
+
+}
+
+
+.hero p {
+
+  max-width: 650px;
+
+  color: #8e9aae;
+
+  line-height: 1.7;
+
+}
+
+
+.heroOrb {
+
+  width: 190px;
+
+  height: 190px;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  background:
+    radial-gradient(
+      circle,
+      #29364d,
+      #0b0f16 68%
+    );
+
+  box-shadow:
+    0 0 80px
+    rgba(100, 140, 200, .16);
+
+}
+
+
+.orbCore {
+
+  width: 92px;
+
+  height: 92px;
+
+  border:
+    1px solid #56647a;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  font-family:
+    "Space Grotesk";
+
+  font-weight: 700;
+
+  letter-spacing: .1em;
+
+}
+
+
+.stats {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 12px;
+
+  margin:
+    14px 0;
+
+}
+
+
+.stat {
+
+  border:
+    1px solid #202734;
+
+  background: #0d1118;
+
+  border-radius: 16px;
+
+  padding: 18px;
+
+}
+
+
+.stat span {
+
+  display: block;
+
+  color: #6f7c90;
+
+  font-size: 11px;
+
+}
+
+
+.stat strong {
+
+  display: block;
+
+  font-family:
+    "Space Grotesk";
+
+  font-size: 25px;
+
+  margin-top: 8px;
+
+}
+
+
+.card {
+
+  border:
+    1px solid #202734;
+
+  border-radius: 20px;
+
+  background: #0d1118;
+
+  padding: 26px;
+
+  margin-top: 14px;
+
+}
+
+
+.cardHeader {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+
+}
+
+
+.cardHeader h3,
+.agentPanel h3 {
+
+  font-family:
+    "Space Grotesk";
+
+  font-size: 22px;
+
+  margin:
+    7px 0 0;
+
+}
+
+
+.liveBadge {
+
+  font-size: 10px;
+
+  padding:
+    6px 10px;
+
+  border-radius: 100px;
+
+  background: #13251d;
+
+  color: #73e0a6;
+
+}
+
+
+form {
+
+  display: grid;
+
+  gap: 18px;
+
+}
+
+
+label {
+
+  color: #a9b3c3;
+
+  font-size: 12px;
+
+  display: grid;
+
+  gap: 8px;
+
+}
+
+
+input,
+textarea {
+
+  width: 100%;
+
+  border:
+    1px solid #252e3c;
+
+  background: #090c12;
+
+  color: #e8edf5;
+
+  padding:
+    13px 14px;
+
+  border-radius: 11px;
+
+  outline: none;
+
+}
+
+
+input:focus,
+textarea:focus {
+
+  border-color:
+    #5e6f89;
+
+}
+
+
+.primaryButton {
+
+  border: 0;
+
+  padding:
+    15px 20px;
+
+  border-radius: 12px;
+
+  background: #e8edf5;
+
+  color: #080b10;
+
+  font-weight: 700;
+
+  letter-spacing: .03em;
+
+}
+
+
+.primaryButton:disabled {
+
+  opacity: .5;
+
+  cursor: wait;
+
+}
+
+
+.sidePanel {
+
+  position: sticky;
+
+  top: 110px;
+
+  height: fit-content;
+
+}
+
+
+.agentPanel {
+
+  border:
+    1px solid #202734;
+
+  background:
+    linear-gradient(
+      180deg,
+      #101620,
+      #0b0e14
+    );
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+}
+
+
+.agentPanel > p {
+
+  color: #7e8a9d;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+}
+
+
+.flow {
+
+  margin-top: 30px;
+
+}
+
+
+.flowStep {
+
+  display: flex;
+
+  gap: 14px;
+
+  padding:
+    15px 0;
+
+  border-bottom:
+    1px solid #1b222d;
+
+}
+
+
+.flowDot {
+
+  width: 26px;
+
+  height: 26px;
+
+  border:
+    1px solid #303a49;
+
+  border-radius: 50%;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #68768a;
+
+  font-size: 11px;
+
+}
+
+
+.flowStep.active
+.flowDot {
+
+  border-color: #6bdfa0;
+
+  color: #6bdfa0;
+
+}
+
+
+.flowStep strong {
+
+  display: block;
+
+  font-size: 13px;
+
+}
+
+
+.flowStep span {
+
+  display: block;
+
+  color: #687589;
+
+  font-size: 11px;
+
+  margin-top: 3px;
+
+}
+
+
+.incidentList {
+
+  display: grid;
+
+  gap: 8px;
+
+}
+
+
+.incidentRow {
+
+  width: 100%;
+
+  text-align: left;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  border:
+    1px solid #1d2531;
+
+  background: #090d13;
+
+  color: white;
+
+  border-radius: 13px;
+
+  padding: 14px;
+
+}
+
+
+.incidentRow:hover {
+
+  border-color:
+    #3c495c;
+
+}
+
+
+.incidentIcon {
+
+  width: 32px;
+
+  height: 32px;
+
+  border-radius: 9px;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #171e28;
+
+  color: #79dfa8;
+
+}
+
+
+.incidentInfo {
+
+  flex: 1;
+
+}
+
+
+.incidentInfo strong {
+
+  display: block;
+
+  font-size: 13px;
+
+}
+
+
+.incidentInfo span {
+
+  color: #687589;
+
+  font-size: 11px;
+
+}
+
+
+.incidentMeta {
+
+  text-align: right;
+
+}
+
+
+.incidentMeta span {
+
+  display: block;
+
+  font-size: 11px;
+
+}
+
+
+.incidentMeta small {
+
+  color: #687589;
+
+}
+
+
+.statusLarge {
+
+  border:
+    1px solid #26303d;
+
+  border-radius: 12px;
+
+  padding: 16px;
+
+  margin:
+    22px 0;
+
+}
+
+
+.statusLarge span {
+
+  display: block;
+
+  color: #687589;
+
+  font-size: 9px;
+
+  letter-spacing: .15em;
+
+}
+
+
+.statusLarge strong {
+
+  display: block;
+
+  margin-top: 6px;
+
+  color: #6ce0a0;
+
+}
+
+
+.metrics {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 8px;
+
+}
+
+
+.metric {
+
+  padding: 13px;
+
+  border:
+    1px solid #1f2733;
+
+  border-radius: 11px;
+
+}
+
+
+.metric span {
+
+  display: block;
+
+  color: #657287;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+}
+
+
+.metric strong {
+
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 13px;
+
+}
+
+
+.routeBox {
+
+  margin-top: 12px;
+
+  padding: 15px;
+
+  background: #0b1017;
+
+  border-radius: 12px;
+
+}
+
+
+.routeBox span {
+
+  display: block;
+
+  color: #657287;
+
+  font-size: 9px;
+
+}
+
+
+.routeBox strong {
+
+  display: block;
+
+  margin-top: 6px;
+
+  font-size: 13px;
+
+}
+
+
+.timeline {
+
+  margin-top: 25px;
+
+}
+
+
+.timelineTitle {
+
+  font-size: 9px;
+
+  color: #657287;
+
+  letter-spacing: .14em;
+
+  margin-bottom: 15px;
+
+}
+
+
+.timelineItem {
+
+  display: flex;
+
+  gap: 12px;
+
+  padding-bottom: 17px;
+
+}
+
+
+.timelineDot {
+
+  width: 22px;
+
+  height: 22px;
+
+  flex: 0 0 22px;
+
+  border-radius: 50%;
+
+  background: #14251d;
+
+  color: #71dfa4;
+
+  display: grid;
+
+  place-items: center;
+
+  font-size: 9px;
+
+}
+
+
+.timelineItem strong {
+
+  font-size: 10px;
+
+  letter-spacing: .05em;
+
+}
+
+
+.timelineItem p {
+
+  color: #778398;
+
+  font-size: 11px;
+
+  margin:
+    4px 0 0;
+
+  line-height: 1.5;
+
+}
+
+
+.plan {
+
+  border-top:
+    1px solid #1d2531;
+
+  padding-top: 20px;
+
+  margin-top: 5px;
+
+}
+
+
+.planItem {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: #9aa6b8;
+
+  font-size: 11px;
+
+  margin:
+    10px 0;
+
+}
+
+
+.planItem span {
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 6px;
+
+  display: grid;
+
+  place-items: center;
+
+  background: #171e29;
+
+  color: #7d8ba0;
+
+}
+
+
+.empty {
+
+  padding: 30px;
+
+  text-align: center;
+
+  color: #667387;
+
+}
+
+
+@media(max-width: 1050px) {
+
+  .layout {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .sidePanel {
+
+    position: static;
+
+  }
+
+}
+
+
+@media(max-width: 700px) {
+
+  .topbar {
+
+    padding: 0 18px;
+
+  }
+
+  .systemStatus {
+
+    display: none;
+  }
+
+  .layout {
+
+    padding: 18px;
+
+  }
+
+  .hero {
+
+    padding: 25px;
+
+  }
+
+  .heroOrb {
+
+    display: none;
+  }
+
+  .stats {
+
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+}
