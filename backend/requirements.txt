@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+google-genai
+google-adk
+google-cloud-firestore
+google-cloud-pubsub
+python-multipart
